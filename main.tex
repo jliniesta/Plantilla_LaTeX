@@ -1,0 +1,58 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry} % Para los margenes
+\usepackage[spanish, es-tabla]{babel} % Traducción al español de tablas, figuras, etc.
+\usepackage{eurosym} % Euro symbol
+\usepackage{amsmath, amsthm, amssymb, amsfonts, mathtools} % Ecuaciones matemáticas
+\usepackage[breaklinks=true]{hyperref} % Para los hipervínculos
+\usepackage{graphicx} % Para insertar imagenes
+\usepackage{subcaption} % Para comparar dos imágenes
+\usepackage{xcolor} % Permite definir colores
+\definecolor{blue1}{RGB}{15 113 189}
+\definecolor{grey1}{RGB}{176 176 176}
+\usepackage{minted}
+\author{Javier López Iniesta Díaz del Campo}
+
+% ======================================
+%     Cabeceras y footers de página 
+\usepackage{fancyhdr} %Para las cabeceras
+\pagestyle{fancy}
+\fancyhead{}
+\setlength{\headheight}{13.6pt}
+\rhead{Plantilla ejemplo} % right head
+%\lfoot{Asignatura} % left foot
+
+\renewcommand{\headrule}{{\color{grey1}
+\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth}}
+\renewcommand{\headrulewidth}{1pt} 
+% ======================================
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+    \input{src/portada}
+\end{titlepage}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%% ÍNDICES %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents % Índice normal (section, subsection...)
+\newpage
+
+%\listoffigures % Índice de figuras
+%\listoftables % Índice de tablas
+
+%%%%%%%%%%%%%%%%%%%% DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introducción}
+
+
+
+\newpage
+
+\bibliographystyle{acm} % Para la bibliografía
+\bibliography{src/bibliografia}
+
+\end{document}
+
+
